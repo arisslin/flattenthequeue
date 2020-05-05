@@ -49,9 +49,6 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{,jsx,json,css,scss,html}": [
-      "prettier --write",
-      "git add"
-    ]
+    "src/**/*.{,jsx,json,css,scss,html}": "eslint --cache --fix"
   }
 }
