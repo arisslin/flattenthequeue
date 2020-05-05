@@ -33,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
     "prettier": "2.0.5"
   }
 }
