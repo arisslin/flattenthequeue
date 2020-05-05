@@ -18,7 +18,10 @@
     "format": "prettier --write \"src/**.*{js,html}\""
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
   },
   "browserslist": {
     "production": [

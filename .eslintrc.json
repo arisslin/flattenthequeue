@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-    "prettier/react"
-  ],
-  "plugins": [],
-  "parserOptions": {}
-}
