@@ -15,13 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --write \"src/**.*{js,html}\"",
-    "precommit": "lint-staged"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --write"
-    ]
+    "format": "prettier --write \"src/**.*{js,html}\""
   },
   "eslintConfig": {
     "extends": [
@@ -42,10 +36,22 @@
     ]
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "prettier": "2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{,jsx,json,css,scss,html}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
