@@ -51,8 +51,7 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "npm run eslint",
-      "npm run eslint:fix"
+      "npm run eslint"
     ]
   }
 }
