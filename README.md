@@ -2,7 +2,17 @@
 
 An app to see the degree of capacity utilisation at supermarkets.
 
-## Tech Stack & Toolchain
+## Table Of Contents
+
+---
+
+1. [Tech Stack & Toolchain](#tech-stack)
+2. [Setup](#setup)
+3. [Run the app in development mode on your local machine](#dev-mode)
+4. [Available Scripts](#scripts)
+5. [Git Actions](#git-actions)
+
+## <a name="tech-stack"></a> Tech Stack & Toolchain
 
 ---
 
@@ -16,7 +26,7 @@ An app to see the degree of capacity utilisation at supermarkets.
 - [Husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
 
-## Setup
+## <a name="setup"></a> Setup
 
 ---
 
@@ -51,7 +61,7 @@ In genereal we recommend you to edit your settings in the `settings.json`. Add o
 }
 ```
 
-## Run the app in development mode on your local machine
+## <a name="dev-mode"></a> Run the app in development mode on your local machine
 
 ---
 
@@ -62,7 +72,7 @@ Therefor type following command into your console:
 
 You can see the app in your browser at http://localhost:3000.
 
-## Available Scripts
+## <a name="scripts"></a> Available Scripts
 
 ---
 
@@ -109,7 +119,7 @@ Eslint checks all `*.js` files in the `src` folder for problems and logs them in
 
 Eslint checks all `*.js` files in the `src` folder for problems and automatically fix them.
 
-## Git Actions
+## <a name="git-actions"></a> Git Actions
 
 ---
 
