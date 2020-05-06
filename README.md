@@ -1,6 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Flatten the queue
+
+An app to see the degree of capacity utilisation at supermarkets.
+
+## Tech Stack & Toolchain
+
+---
+
+- [Create React App](https://github.com/facebook/create-react-app)
+- [styled-components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+- [Husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
+
+## Setup
+
+---
+
+Clone this repository to your local machine:
+
+`git clone git@github.com:arisslin/flattenthequeue.git`
+
+Make sure npm is installed on your local machine. Then switch into the repo and install the projects dependencies.
+
+```
+cd flattenthequeue
+npm i
+```
+
+### VS Code
+
+If you use VS Code, you can use `Eslint` and `Prettier` as an extension.
+
+In genereal we recommend you to edit your settings in the `settings.json`. Add or adjust following lines between the curly braces in your editor:
+
+```
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+      "editor.formatOnSave": false
+  },
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": [
+      "js"
+  ],
+  "prettier.requireConfig": true
+}
+```
+
+## Run the app in development mode on your local machine
+
+---
+
+Make sure you are in the repos root folder. Then run the npm start script.
+Therefor type following command into your console:
+
+> `npm start`
+
+You can see the app in your browser at http://localhost:3000.
 
 ## Available Scripts
+
+---
 
 In the project directory, you can run:
 
@@ -37,32 +101,28 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `npm run eslint`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Eslint checks all `*.js` files in the `src` folder for problems and logs them in the console.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `npm run eslint:fix`
 
-### Code Splitting
+Eslint checks all `*.js` files in the `src` folder for problems and automatically fix them.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Git Actions
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+The repository comes with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). The tools will ensure to run different scripts at specific **git commands**. This will ensure to format and check the code for problems before commit or push it.
 
-### Making a Progressive Web App
+### `pre-commit`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+Triggers Eslint to check all `*.js` files in the `src` folder for problems and automatically fix them.
 
-### Advanced Configuration
+If the fixes fail the commit will not be done and the fix has to be done manually.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### `pre-push`
 
-### Deployment
+Trigger Eslint to check all `*.js` files in the `src` folder for problems and logs them in the console.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If the check finds problems the push will not be done and the problems have to be fixed manually.
