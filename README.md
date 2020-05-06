@@ -4,6 +4,37 @@ An app to see the degree of capacity utilisation at supermarkets.
 
 ## Setup
 
+Clone this repository to your local machine:
+
+`git clone git@github.com:arisslin/flattenthequeue.git`
+
+Make sure npm is installed on your local machine. Then switch into the repo and install the projects dependencies.
+
+```
+cd flattenthequeue
+npm i
+```
+
+### VS Code
+
+If you use VS Code, you can use `Eslint` and `Prettier` as an extension.
+
+In genereal we recommend you to edit your settings in the `settings.json`. Add or adjust following lines between the curly braces in your editor:
+
+```
+{
+  "editor.formatOnSave": true,
+  "[javascript]": {
+      "editor.formatOnSave": false
+  },
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": [
+      "js"
+  ],
+  "prettier.requireConfig": true
+}
+```
+
 ## Tech Stack & Toolchain
 
 - [Create React App](https://github.com/facebook/create-react-app)
