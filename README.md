@@ -2,11 +2,19 @@
 
 An app to see the degree of capacity utilisation at supermarkets.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Setup
 
-## Tech Stack
+## Tech Stack & Toolchain
+
+- [Create React App](https://github.com/facebook/create-react-app)
+- [styled-components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+- [Husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
 
 ## Available Scripts
 
@@ -52,3 +60,5 @@ Eslint checks all `*.js` files in the `src` folder for problems and logs them in
 ### `npm run eslint:fix`
 
 Eslint checks all `*.js` files in the `src` folder for problems and automatically fix them.
+
+## Husky and lint-staged
