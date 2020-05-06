@@ -125,4 +125,4 @@ If the fixes fail the commit will not be done and the fix has to be done manuall
 
 Trigger Eslint to check all `*.js` files in the `src` folder for problems and logs them in the console.
 
-If the check finds problems the push will not be done and the problems hast to be fixed before manually.
+If the check finds problems the push will not be done and the problems have to be fixed manually.
