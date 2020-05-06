@@ -2,7 +2,23 @@
 
 An app to see the degree of capacity utilisation at supermarkets.
 
+## Tech Stack & Toolchain
+
+---
+
+- [Create React App](https://github.com/facebook/create-react-app)
+- [styled-components](https://styled-components.com/)
+- [Jest](https://jestjs.io/)
+- [Eslint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
+- [Husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
+
 ## Setup
+
+---
 
 Clone this repository to your local machine:
 
@@ -35,19 +51,20 @@ In genereal we recommend you to edit your settings in the `settings.json`. Add o
 }
 ```
 
-## Tech Stack & Toolchain
+## Run the app in development mode on your local machine
 
-- [Create React App](https://github.com/facebook/create-react-app)
-- [styled-components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
-- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
-- [Husky](https://github.com/typicode/husky)
-- [lint-staged](https://github.com/okonet/lint-staged)
+---
+
+Make sure you are in the repos root folder. Then run the npm start script.
+Therefor type following command into your console:
+
+> `npm start`
+
+You can see the app in your browser at http://localhost:3000.
 
 ## Available Scripts
+
+---
 
 In the project directory, you can run:
 
@@ -92,4 +109,20 @@ Eslint checks all `*.js` files in the `src` folder for problems and logs them in
 
 Eslint checks all `*.js` files in the `src` folder for problems and automatically fix them.
 
-## Husky and lint-staged
+## Git Actions
+
+---
+
+The repository comes with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). The tools will ensure to run different scripts at specific **git commands**. This will ensure to format and check the code for problems before commit or push it.
+
+### `pre-commit`
+
+Triggers Eslint to check all `*.js` files in the `src` folder for problems and automatically fix them.
+
+If the fixes fail the commit will not be done and the fix has to be done manually.
+
+### `pre-push`
+
+Trigger Eslint to check all `*.js` files in the `src` folder for problems and logs them in the console.
+
+If the check finds problems the push will not be done and the problems hast to be fixed before manually.
