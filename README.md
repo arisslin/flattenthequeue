@@ -2,12 +2,6 @@
 
 An app to see the degree of capacity utilisation at supermarkets.
 
-## Table Of Contents
-
----
-
-[Git Actions](#git-actions)
-
 ## Tech Stack & Toolchain
 
 ---
@@ -115,7 +109,7 @@ Eslint checks all `*.js` files in the `src` folder for problems and logs them in
 
 Eslint checks all `*.js` files in the `src` folder for problems and automatically fix them.
 
-## <a name="git-actions"></a>Git Actions
+## Git Actions
 
 ---
 
