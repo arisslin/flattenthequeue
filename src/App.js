@@ -15,7 +15,7 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Suspense fallback={<p>Loading ...</p>}>
+          <Suspense fallback={<p>Lade ...</p>}>
             <Route path="/details">
               <Details />
             </Route>

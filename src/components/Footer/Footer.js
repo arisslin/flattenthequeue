@@ -1,31 +1,10 @@
 import React from 'react'
-import styled from 'styled-components/macro'
-import { NavLink } from 'react-router-dom'
+import Navigation from '../Navigation/Navigation'
 
 export default function Footer() {
   return (
-    <FooterStyled>
-      <Navigation>
-        <Link to="/">Home</Link>
-        <Link to="/details">Details</Link>
-        <Link to="/about">About</Link>
-      </Navigation>
-    </FooterStyled>
+    <footer role="contentinfo">
+      <Navigation />
+    </footer>
   )
 }
-
-const FooterStyled = styled.footer`
-  background: orange;
-  color: white;
-`
-
-const Navigation = styled.nav`
-  display: grid;
-  grid-template: 1fr / repeat(3, 1fr);
-  height: 100%;
-  > a {
-    width: 100%;
-  }
-`
-
-const Link = styled(NavLink)``
