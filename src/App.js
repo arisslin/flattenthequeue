@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/Home/Home'
 import Footer from './components/Footer/Footer'
+import NotFound from './components/NotFound/NotFound'
 
 const Details = lazy(() => import('./components/Details/Details'))
 const About = lazy(() => import('./components/About/About'))
@@ -15,14 +16,21 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Suspense fallback={<p>Lade ...</p>}>
-            <Route path="/details">
+          <Route exact path="/details">
+            <Suspense fallback={<p>Lade ...</p>}>
               <Details />
-            </Route>
-            <Route path="/about">
+            </Suspense>
+          </Route>
+          <Route exact path="/about">
+            <Suspense fallback={<p>Lade ...</p>}>
               <About />
-            </Route>
-          </Suspense>
+            </Suspense>
+          </Route>
+          <Route>
+            <Suspense fallback={<p>Lade ...</p>}>
+              <NotFound />
+            </Suspense>
+          </Route>
         </Switch>
         <Footer />
       </Router>

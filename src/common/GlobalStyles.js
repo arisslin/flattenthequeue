@@ -12,7 +12,7 @@ export default createGlobalStyle`
     max-width: 1200px;
     box-shadow: 0px 0px 12px 0px #bbb;
     background: #f8f8f8;
-    font-family: 'Lato', sans-serif;;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     line-height: 1.4;
   }

@@ -19,6 +19,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "cy": "npm-run-all --parallel --race start cypress:open",
+    "cy:run": "npm-run-all --parallel start cypress:run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "eject": "react-scripts eject",
     "eslint": "eslint src/**/*.js",
     "eslint:fix": "npm run eslint -- --fix"
@@ -42,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^4.5.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
