@@ -2,9 +2,15 @@
 
 An app to see the degree of capacity utilisation at supermarkets.
 
-## Tech Stack & Toolchain
+## Table Of Contents
 
----
+1. [Tech Stack & Toolchain](#tech-stack)
+2. [Setup](#setup)
+3. [Run the app in development mode on your local machine](#dev-mode)
+4. [Available Scripts](#scripts)
+5. [Git Actions](#git-actions)
+
+## <a name="tech-stack"></a> Tech Stack & Toolchain
 
 - [Create React App](https://github.com/facebook/create-react-app)
 - [styled-components](https://styled-components.com/)
@@ -16,9 +22,7 @@ An app to see the degree of capacity utilisation at supermarkets.
 - [Husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
 
-## Setup
-
----
+## <a name="setup"></a> Setup
 
 Clone this repository to your local machine:
 
@@ -51,9 +55,7 @@ In genereal we recommend you to edit your settings in the `settings.json`. Add o
 }
 ```
 
-## Run the app in development mode on your local machine
-
----
+## <a name="dev-mode"></a> Run the app in development mode on your local machine
 
 Make sure you are in the repos root folder. Then run the npm start script.
 Therefor type following command into your console:
@@ -62,9 +64,7 @@ Therefor type following command into your console:
 
 You can see the app in your browser at http://localhost:3000.
 
-## Available Scripts
-
----
+## <a name="scripts"></a> Available Scripts
 
 In the project directory, you can run:
 
@@ -109,9 +109,7 @@ Eslint checks all `*.js` files in the `src` folder for problems and logs them in
 
 Eslint checks all `*.js` files in the `src` folder for problems and automatically fix them.
 
-## Git Actions
-
----
+## <a name="git-actions"></a> Git Actions
 
 The repository comes with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged). The tools will ensure to run different scripts at specific **git commands**. This will ensure to format and check the code for problems before commit or push it.
 
