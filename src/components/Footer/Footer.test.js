@@ -4,11 +4,11 @@ import Footer from './Footer'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 test('renders Footer', () => {
-  const { getByRole } = render(
+  const { container } = render(
     <Router>
       <Footer />
     </Router>
   )
-  const role = getByRole('contentinfo')
-  expect(role).toBeInTheDocument()
+  const footer = container.querySelector('footer')
+  expect(footer).toBeInTheDocument()
 })
