@@ -19,7 +19,8 @@
     "eslint": "eslint src/**/*.js",
     "eslint:fix": "npm run eslint -- --fix",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "update-snapshot": "npm run test -- --updateSnapshot"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,7 @@
     "@storybook/addon-actions": "5.3.18",
     "@storybook/addon-docs": "5.3.18",
     "@storybook/addon-links": "5.3.18",
+    "@storybook/addon-storyshots": "5.3.18",
     "@storybook/addons": "5.3.18",
     "@storybook/preset-create-react-app": "2.1.1",
     "@storybook/react": "5.3.18",
@@ -53,7 +55,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.2",
     "prettier": "2.0.5",
-    "react-is": "16.13.1"
+    "react-is": "16.13.1",
+    "react-test-renderer": "16.13.1"
   },
   "husky": {
     "hooks": {
