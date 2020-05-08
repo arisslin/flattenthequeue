@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:headless": "BROWSER=none npm start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "cy:open": "concurrently npm:start \"cypress open\"",
