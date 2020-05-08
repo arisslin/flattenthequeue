@@ -13,6 +13,12 @@ assignees: ''
 
 ## Acceptance Criterias
 
+- [ ] Criteria 1
+- [ ] Criteria 2
+- [ ] ...
+
 ## Tasks
 
-## Size
+- [ ] Task 1 ...
+- [ ] Task 2 ...
+- [ ] ...
