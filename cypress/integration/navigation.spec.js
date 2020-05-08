@@ -2,7 +2,7 @@ const url = Cypress.config().baseUrl
 
 context('Navigation', () => {
   beforeEach(() => {
-    cy.visit(url)
+    cy.visit('')
   })
 
   it('clicks the links in the navigation in the footer and checks the resulting location', () => {
