@@ -12,26 +12,22 @@ export default function App() {
   return (
     <AppStyled>
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/details">
-            <Suspense fallback={<p>Lade ...</p>}>
+        <Suspense fallback={<p>Lädt...</p>}>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/details">
               <Details />
-            </Suspense>
-          </Route>
-          <Route exact path="/about">
-            <Suspense fallback={<p>Lade ...</p>}>
+            </Route>
+            <Route exact path="/about">
               <About />
-            </Suspense>
-          </Route>
-          <Route>
-            <Suspense fallback={<p>Lade ...</p>}>
+            </Route>
+            <Route>
               <NotFound />
-            </Suspense>
-          </Route>
-        </Switch>
+            </Route>
+          </Switch>
+        </Suspense>
         <Footer />
       </Router>
     </AppStyled>
