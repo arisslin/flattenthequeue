@@ -13,11 +13,11 @@ export default function NotFound() {
   }, [])
 
   return (
-    <main>
-      <h2>404! Bitte tritt zurück ... Hier gibt es nichts zu sehen.</h2>
-      <h2>
+    <>
+      <p>404! Bitte tritt zurück ... Hier gibt es nichts zu sehen.</p>
+      <p>
         Du wirst zur <NavLink to="/">Startseite</NavLink> weitergeleitet.
-      </h2>
-    </main>
+      </p>
+    </>
   )
 }

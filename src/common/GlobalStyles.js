@@ -16,4 +16,8 @@ export default createGlobalStyle`
     font-size: 18px;
     line-height: 1.4;
   }
+
+  h1, h2 {
+    margin-top: 0;
+  }
 `
