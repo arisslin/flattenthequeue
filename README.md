@@ -21,6 +21,7 @@ An app to see the degree of capacity utilisation at supermarkets.
 - [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)
 - [Husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
+- [storybook](https://storybook.js.org/)
 
 ## <a name="setup"></a> Setup
 
@@ -79,7 +80,16 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.<br/>
+
+This will generate and test snapshots as well. When a snapshot test fails
+
+- and you modified the component under test or it's story: generate a new snapshot either by running `npm run update-snapshot`, interactively via the jest test runner or the vscode plugin
+- else: you introduced a bug ;) go and fix it!
+
+### `npm run update-snapshot`
+
+Discards all snapshots and generates new ones.
 
 ### `npm run build`
 
