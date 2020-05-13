@@ -12,22 +12,24 @@ export default function App() {
   return (
     <AppStyled>
       <Router>
-        <Suspense fallback={<p>Lädt...</p>}>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/details">
-              <Details />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route>
-              <NotFound />
-            </Route>
-          </Switch>
-        </Suspense>
+        <main>
+          <Suspense fallback={<p>Lädt...</p>}>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route exact path="/details">
+                <Details />
+              </Route>
+              <Route exact path="/about">
+                <About />
+              </Route>
+              <Route>
+                <NotFound />
+              </Route>
+            </Switch>
+          </Suspense>
+        </main>
         <Footer />
       </Router>
     </AppStyled>
@@ -38,4 +40,10 @@ const AppStyled = styled.div`
   display: grid;
   grid-template: auto 48px / 1fr;
   height: 100vh;
+
+  main {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
 `
