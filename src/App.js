@@ -1,12 +1,12 @@
 import React, { Suspense, lazy } from 'react'
 import styled from 'styled-components/macro'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from './components/Home/Home'
+import Home from './components/pages/Home/Home'
 import Footer from './components/Footer/Footer'
-import NotFound from './components/NotFound/NotFound'
+import NotFound from './components/pages/NotFound/NotFound'
 
-const Details = lazy(() => import('./components/Details/Details'))
-const About = lazy(() => import('./components/About/About'))
+const Details = lazy(() => import('./components/pages/Details/Details'))
+const About = lazy(() => import('./components/pages/About/About'))
 
 export default function App() {
   return (
