@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react'
 import styled from 'styled-components/macro'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
-import Footer from './components/Footer'
+import Navigation from './components/Navigation'
 import NotFound from './components/pages/NotFound'
 
 const Details = lazy(() => import('./components/pages/Details'))
@@ -30,7 +30,7 @@ export default function App() {
             </Switch>
           </Suspense>
         </main>
-        <Footer />
+        <Navigation />
       </Router>
     </AppStyled>
   )
