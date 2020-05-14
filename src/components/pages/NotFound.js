@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { NavLink, useHistory } from 'react-router-dom'
 
 export default function NotFound() {
-  let history = useHistory()
+  const history = useHistory()
 
   useEffect(() => {
     const timer = setTimeout(() => {
