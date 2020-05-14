@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start:headless": "BROWSER=none npm start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "cy:open": "concurrently npm:start \"cypress open\"",
@@ -36,6 +37,7 @@
       "plugin:@typescript-eslint/recommended",
       "plugin:@typescript-eslint/recommended-requiring-type-checking"
     ],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "project": "./tsconfig.json"
     },
@@ -67,8 +69,9 @@
     "@storybook/addons": "5.3.18",
     "@storybook/preset-create-react-app": "2.1.1",
     "@storybook/react": "5.3.18",
-    "@typescript-eslint/eslint-plugin": "^2.33.0",
-    "@typescript-eslint/parser": "^2.33.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^25.2.2",
     "@types/node": "^14.0.1",
     "@types/react": "^16.9.35",
@@ -76,6 +79,9 @@
     "@types/react-router": "^5.1.7",
     "@types/react-router-dom": "^5.1.5",
     "@types/styled-components": "^5.1.0",
+    "@types/testing-library__react": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
     "babel-loader": "8.1.0",
     "concurrently": "^5.2.0",
     "cypress": "^4.5.0",
@@ -88,9 +94,7 @@
     "prettier": "2.0.5",
     "react-is": "16.13.1",
     "react-test-renderer": "16.13.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1"
+    "ts-jest": "^25.5.1"
   },
   "husky": {
     "hooks": {

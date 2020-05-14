@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, FunctionComponent } from 'react'
 import { NavLink, useHistory } from 'react-router-dom'
 
-export default function NotFound() {
+const NotFound: FunctionComponent = () => {
   const history = useHistory()
 
   useEffect(() => {
     const timer = setTimeout(() => {
       history.push('/')
     }, 3000)
-    return () => clearTimeout(timer)
+    return (): void => clearTimeout(timer)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
@@ -21,3 +21,5 @@ export default function NotFound() {
     </>
   )
 }
+
+export default NotFound
