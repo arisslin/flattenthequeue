@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense, lazy, FunctionComponent } from 'react'
 import styled from 'styled-components/macro'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './components/pages/Home'
@@ -8,7 +8,7 @@ import NotFound from './components/pages/NotFound'
 const Details = lazy(() => import('./components/pages/Details'))
 const About = lazy(() => import('./components/pages/About'))
 
-export default function App() {
+const App: FunctionComponent = () => {
   return (
     <AppStyled>
       <Router>
@@ -35,6 +35,8 @@ export default function App() {
     </AppStyled>
   )
 }
+
+export default App
 
 const AppStyled = styled.div`
   display: grid;

@@ -3,8 +3,8 @@ import { render, fireEvent } from '@testing-library/react'
 import Navigation from './Navigation'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-test('renders links to pages: /, /about, /details ', async () => {
-  const { container } = await render(
+test('renders links to pages: /, /about, /details ', () => {
+  const { container } = render(
     <Router>
       <Navigation />
     </Router>

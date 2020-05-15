@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import styled from 'styled-components/macro'
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,7 +8,7 @@ import {
   faSearch,
 } from '@fortawesome/free-solid-svg-icons'
 
-export default function Navigation() {
+const Navigation: FunctionComponent = () => {
   return (
     <Nav>
       <NavLink aria-label="Go to the start page to search for shops." to="/">
@@ -29,6 +29,8 @@ export default function Navigation() {
     </Nav>
   )
 }
+
+export default Navigation
 
 const Nav = styled.nav`
   display: grid;
